@@ -33,7 +33,7 @@ CREATE TABLE `comment` (
   KEY `listId` (`listId`),
   CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`),
   CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`listId`) REFERENCES `list` (`listId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `comment` (
 
 LOCK TABLES `comment` WRITE;
 /*!40000 ALTER TABLE `comment` DISABLE KEYS */;
-INSERT INTO `comment` VALUES (1,'commentContent1','2022-03-30 20:21:20','userId1',3);
+INSERT INTO `comment` VALUES (1,'commentContent1','2022-03-30 20:21:20','userId1',3),(2,'commentContent2','2022-04-10 20:09:18','userId2',3);
 /*!40000 ALTER TABLE `comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,11 +60,10 @@ CREATE TABLE `list` (
   `listDate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `listHit` int NOT NULL DEFAULT '0',
   `userId` varchar(20) NOT NULL,
-  `listLike` int NOT NULL DEFAULT '0',
   PRIMARY KEY (`listId`),
   KEY `userId` (`userId`),
   CONSTRAINT `list_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,7 +72,7 @@ CREATE TABLE `list` (
 
 LOCK TABLES `list` WRITE;
 /*!40000 ALTER TABLE `list` DISABLE KEYS */;
-INSERT INTO `list` VALUES (3,'listTitle','listContent','2022-03-30 20:20:18',0,'userId1',0),(4,'listTitle2','listContent2','2022-04-09 20:11:54',0,'userId1',0),(5,'listtitle3','listContent3','2022-04-09 20:15:00',0,'userId1',0),(6,'listTitle4','listContent4','2022-04-09 20:16:14',0,'userId2',0),(7,'listTitle5','listContent5','2022-04-09 20:16:14',0,'userId2',0),(8,'listTitle6','listContent6','2022-04-09 20:16:14',0,'userId2',0),(9,'listTitle7','listContent7','2022-04-09 20:16:14',0,'userId3',0),(10,'listTitle8','listConetnt8','2022-04-09 20:16:14',0,'userId3',0),(11,'listTitle9','listContent9','2022-04-09 20:16:14',0,'userId3',0),(12,'listTitle10','listContent10','2022-04-09 20:17:31',0,'userId4',0),(13,'listTitle11','listContent11','2022-04-09 20:17:31',0,'userId4',0),(14,'listTitle12','listContent12','2022-04-09 20:17:31',0,'userId4',0),(15,'listTitle13','listContent13','2022-04-09 20:17:31',0,'userId5',0),(16,'listTitle14','listContent14','2022-04-09 20:17:31',0,'userId5',0),(17,'listTitle15','listContent15','2022-04-09 20:17:31',0,'userId5',0);
+INSERT INTO `list` VALUES (3,'listTitle1','listContent1','2022-03-30 20:20:18',0,'userId1'),(4,'listTitle2','listContent2','2022-04-09 20:11:54',0,'userId1'),(5,'listtitle3','listContent3','2022-04-09 20:15:00',0,'userId1'),(6,'listTitle4','listContent4','2022-04-09 20:16:14',0,'userId2'),(7,'listTitle5','listContent5','2022-04-09 20:16:14',0,'userId2'),(8,'listTitle6','listContent6','2022-04-09 20:16:14',0,'userId2'),(9,'listTitle7','listContent7','2022-04-09 20:16:14',0,'userId3'),(10,'listTitle8','listConetnt8','2022-04-09 20:16:14',0,'userId3'),(11,'listTitle9','listContent9','2022-04-09 20:16:14',0,'userId3'),(12,'listTitle10','listContent10','2022-04-09 20:17:31',0,'userId4'),(13,'listTitle11','listContent11','2022-04-09 20:17:31',0,'userId4'),(14,'listTitle12','listContent12','2022-04-09 20:17:31',0,'userId4'),(15,'listTitle13','listContent13','2022-04-09 20:17:31',0,'userId5'),(16,'listTitle14','listContent14','2022-04-09 20:17:31',0,'userId5'),(17,'listTitle15','listContent15','2022-04-09 20:17:31',0,'userId5');
 /*!40000 ALTER TABLE `list` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,7 +92,7 @@ CREATE TABLE `listlike` (
   KEY `userId` (`userId`),
   CONSTRAINT `listlike_ibfk_1` FOREIGN KEY (`listId`) REFERENCES `list` (`listId`),
   CONSTRAINT `listlike_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +101,7 @@ CREATE TABLE `listlike` (
 
 LOCK TABLES `listlike` WRITE;
 /*!40000 ALTER TABLE `listlike` DISABLE KEYS */;
-INSERT INTO `listlike` VALUES (1,3,'userId1');
+INSERT INTO `listlike` VALUES (1,3,'userId1'),(2,3,'userId2');
 /*!40000 ALTER TABLE `listlike` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -143,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-09 20:40:45
+-- Dump completed on 2022-04-10 20:52:33
