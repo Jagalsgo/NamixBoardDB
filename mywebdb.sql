@@ -33,7 +33,7 @@ CREATE TABLE `comment` (
   KEY `listId` (`listId`),
   CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`userId`) REFERENCES `user` (`userId`),
   CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`listId`) REFERENCES `list` (`listId`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,7 @@ CREATE TABLE `comment` (
 
 LOCK TABLES `comment` WRITE;
 /*!40000 ALTER TABLE `comment` DISABLE KEYS */;
-INSERT INTO `comment` VALUES (1,'commentContent1','2022-03-30 20:21:20','userId1',3),(2,'commentContent2','2022-04-10 20:09:18','userId2',3);
+INSERT INTO `comment` VALUES (1,'commentContent1','2022-03-30 20:21:20','userId1',3),(2,'commentContent2','2022-04-10 20:09:18','userId2',3),(3,'commentcococo','2022-04-13 19:45:25','userId4',17),(4,'comemememem','2022-04-13 19:45:25','userId5',17);
 /*!40000 ALTER TABLE `comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,7 +129,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('userId1','userPassword1','홍길동','userEmail@naver.com','남','2022-03-30 20:17:28'),('userId2','userPassword2','김길동','userEmail2@naver.com','여','2022-04-09 20:12:31'),('userId3','userPassword3','가가가','userEmail3@naver.com','남','2022-04-09 20:13:36'),('userId4','userPassword4','기기기','userEmail4@naver.com','여','2022-04-09 20:13:36'),('userId5','userPassword5','나나나','userEmail5@naver.com','여','2022-04-09 20:13:36');
+INSERT INTO `user` VALUES ('userId1','userPassword1','홍길동','userEmail@naver.com','남','2022-03-30 20:17:28'),('userId2','userPassword2','김길동','userEmail2@naver.com','여','2022-04-09 20:12:31'),('userId3','userPassword3','가가가','userEmail3@naver.com','남','2022-04-09 20:13:36'),('userId4','userPassword4','기기기','userEmail4@naver.com','여','2022-04-09 20:13:36'),('userId5','userPassword5','나나나','userEmail5@naver.com','여','2022-04-09 20:13:36'),('userId6','userPassword6','기리니','userEmail6@naver.com','남','2022-04-11 16:46:54');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -142,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-10 20:52:33
+-- Dump completed on 2022-04-13 22:38:37
