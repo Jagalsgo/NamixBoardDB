@@ -72,7 +72,7 @@ CREATE TABLE `list` (
 
 LOCK TABLES `list` WRITE;
 /*!40000 ALTER TABLE `list` DISABLE KEYS */;
-INSERT INTO `list` VALUES (3,'listTitle1','listContent1','2022-03-30 20:20:18',0,'userId1'),(4,'listTitle2','listContent2','2022-04-09 20:11:54',0,'userId1'),(5,'listtitle3','listContent3','2022-04-09 20:15:00',0,'userId1'),(6,'listTitle4','listContent4','2022-04-09 20:16:14',0,'userId2'),(7,'listTitle5','listContent5','2022-04-09 20:16:14',0,'userId2'),(8,'listTitle6','listContent6','2022-04-09 20:16:14',0,'userId2'),(9,'listTitle7','listContent7','2022-04-09 20:16:14',0,'userId3'),(10,'listTitle8','listConetnt8','2022-04-09 20:16:14',0,'userId3'),(11,'listTitle9','listContent9','2022-04-09 20:16:14',0,'userId3'),(12,'listTitle10','listContent10','2022-04-09 20:17:31',0,'userId4'),(13,'listTitle11','listContent11','2022-04-09 20:17:31',0,'userId4'),(14,'listTitle12','listContent12','2022-04-09 20:17:31',0,'userId4'),(15,'listTitle13','listContent13','2022-04-09 20:17:31',0,'userId5'),(16,'listTitle14','listContent14','2022-04-09 20:17:31',0,'userId5'),(17,'listTitle15','listContent15','2022-04-09 20:17:31',0,'userId5'),(19,'listTitle 16','listContent 16','2022-04-15 20:46:56',0,'userId1'),(20,'nlkvdnslkn','lihf;ewd','2022-04-15 21:00:00',0,'userId1');
+INSERT INTO `list` VALUES (3,'listTitle1','listContent1','2022-03-30 20:20:18',0,'userId1'),(4,'listTitle2','listContent2','2022-04-09 20:11:54',0,'userId1'),(5,'listtitle3','listContent3','2022-04-09 20:15:00',0,'userId1'),(6,'listTitle4','listContent4','2022-04-09 20:16:14',0,'userId2'),(7,'listTitle5','listContent5','2022-04-09 20:16:14',0,'userId2'),(8,'listTitle6','listContent6','2022-04-09 20:16:14',0,'userId2'),(9,'listTitle7','listContent7','2022-04-09 20:16:14',0,'userId3'),(10,'listTitle8','listConetnt8','2022-04-09 20:16:14',0,'userId3'),(11,'listTitle9','listContent9','2022-04-09 20:16:14',0,'userId3'),(12,'listTitle10','listContent10','2022-04-09 20:17:31',0,'userId4'),(13,'listTitle11','listContent11','2022-04-09 20:17:31',0,'userId4'),(14,'listTitle12','listContent12','2022-04-09 20:17:31',0,'userId4'),(15,'listTitle13','listContent13','2022-04-09 20:17:31',0,'userId5'),(16,'listTitle14','listContent14','2022-04-09 20:17:31',0,'userId5'),(17,'listTitle15','listContent15','2022-04-09 20:17:31',0,'userId5');
 /*!40000 ALTER TABLE `list` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,7 +129,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES ('dflnlnkvs1','password1!','러리나','remaile@naver.com','regMale','2022-04-15 19:21:22'),('userId1','userPassword1','홍길동','userEmail@naver.com','남','2022-03-30 20:17:28'),('userId2','userPassword2','김길동','userEmail2@naver.com','여','2022-04-09 20:12:31'),('userId3','userPassword3','가가가','userEmail3@naver.com','남','2022-04-09 20:13:36'),('userId4','userPassword4','기기기','userEmail4@naver.com','여','2022-04-09 20:13:36'),('userId5','userPassword5','나나나','userEmail5@naver.com','여','2022-04-09 20:13:36'),('userId6','userPassword6','기리니','userEmail6@naver.com','남','2022-04-11 16:46:54');
+INSERT INTO `user` VALUES ('dfjlksddsv','userpa1!','김김아','userue@naver.com','regMale','2022-04-17 20:15:45'),('dflnlnkvs1','password1!','러리나','remaile@naver.com','regMale','2022-04-15 19:21:22'),('userId1','userPassword1','홍길동','userEmail@naver.com','남','2022-03-30 20:17:28'),('userId2','userPassword2','김길동','userEmail2@naver.com','여','2022-04-09 20:12:31'),('userId3','userPassword3','가가가','userEmail3@naver.com','남','2022-04-09 20:13:36'),('userId4','userPassword4','기기기','userEmail4@naver.com','여','2022-04-09 20:13:36'),('userId5','userPassword5','나나나','userEmail5@naver.com','여','2022-04-09 20:13:36'),('userId6','userPassword6','기리니','userEmail6@naver.com','남','2022-04-11 16:46:54');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -142,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-15 21:04:58
+-- Dump completed on 2022-04-17 20:49:34
